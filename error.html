@@ -1,42 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>ISOLIR</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>PT Ultra Network Solution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .notification-card { 
+                padding: 1.5rem !important; 
+                border-radius: 12px !important;
+            }
+            .payment-details { 
+                padding: 1rem !important; 
+            }
+            h2 { 
+                font-size: 1.3rem !important; 
+                letter-spacing: -0.3px !important;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+            .whatsapp-btn {
+                padding: 1rem 1.5rem !important;
+                min-width: 90% !important;
+            }
+        }
+
+        i { 
+            width: 1em; 
+            text-align: center; 
+        }
+    </style>
 </head>
-<body style="background: linear-gradient(135deg, #2E1437 0%, #6A1B9A 100%); min-height: 100vh; margin: 0; padding: 30px 20px; color: white; font-family: 'Poppins', Arial, sans-serif;">
+<body style="
+    background: linear-gradient(135deg, #2A0944 0%, #3B185F 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+">
 
-    <div style="text-align: center; margin-bottom: 40px;">
-        <a href="https://ibb.co/RTdHG0Ss">
-            <img src="https://i.ibb.co/8gt8n5Bf/Logo-LDP-08a.png" 
-                 alt="Logo-LDP-08a" 
-                 style="display: inline-block; max-width: 280px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));">
-        </a>
+<div style="
+    width: 100%;
+    max-width: 640px;
+    animation: fadeIn 0.6s ease-out;
+    padding: 1rem;
+">
+    <div style="
+        text-align: center;
+        margin-bottom: 2rem;
+        filter: drop-shadow(0 4px 15px rgba(0,0,0,0.2));
+    ">
+        <img src="https://i.ibb.co/8gt8n5Bf/Logo-LDP-08a.png" 
+             alt="ldp.net.id" 
+             style="
+                width: min(200px, 50%);
+                height: auto;
+                opacity: 0.95;
+             ">
     </div>
-
-    <div style="background: rgba(255,255,255,0.12); padding: 30px; border-radius: 15px; max-width: 680px; margin: 0 auto; backdrop-filter: blur(8px); text-align: center;">
-        <h2 style="color: #E0AAFF; margin-bottom: 25px; font-family: 'Arial', sans-serif; border-bottom: 2px solid #9D4EDD; padding-bottom: 10px; display: inline-block;">
-            Dear Pelanggan tws.net yang terhormat
-        </h2>
-        
-        <div style="line-height: 1.7; font-size: 16px; text-align: center;">
-            <p style="margin: 20px 0;">Kami informasikan bahwa layanan internet Anda saat ini <span style="color: #FF6B6B; font-weight: bold;">terisolir</span></p>
-            
-            <div style="margin: 25px 0;">
-                <span style="background: #9D4EDD; padding: 8px 20px; border-radius: 25px; display: inline-block;">
-                    Dimohon segera melakukan pembayaran tagihan
-                </span>
-            </div>
-            
-            <p style="margin: 20px 0;">
-                Agar layanan tetap aktif, silakan hubungi nomor ---- dan lakukan pembayaran secara rutin<br>
-                <span style="font-size: 1.2em; color: #C77DFF; font-weight: bold; margin-top: 10px; display: inline-block;">
-                    Pembayaran Tanggal 20 Setiap Bulannya
-                </span>
+    <div class="notification-card" style="
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255,255,255,0.1);
+    ">
+        <div style="
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        ">
+            <h2 style="
+                color: #E0AAFF;
+                margin: 0;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.4;
+            ">
+                Pemberitahuan Isolir Layanan
+            </h2>
+            <p style="
+                color: rgba(255,255,255,0.8);
+                margin: 0.8rem 0 0 0;
+                font-size: 0.95rem;
+            ">
+                Kepada Pelanggan tws.net yang terhormat
             </p>
         </div>
-        
-        <p style="margin-top: 30px; color: #E0AAFF; font-size: 13px; letter-spacing: 0.5px; font-style: italic;">Pt Ultra Network Sollution <br> Solusi Bagi Kebutuhan Internet Anda</p>
+        <div style="font-size: 0.95rem;">
+            <div style="
+                background: rgba(255, 75, 75, 0.15);
+                padding: 1.2rem;
+                border-radius: 12px;
+                margin-bottom: 1.5rem;
+                border: 1px solid rgba(255,75,75,0.2);
+                text-align: center;
+            ">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-exclamation-triangle" style="color: #FF6B6B;"></i>
+                    <strong style="color: #FF6B6B;">Status Layanan:</strong> Terisolir
+                </div>
+            </div>
+            <div style="margin: 2rem 0; text-align: center;">
+                <a href="https://wa.me/6285184001235" 
+                   class="whatsapp-btn"
+                   style="
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.75rem;
+                        background: linear-gradient(135deg, #9D4EDD 0%, #7B2CBF 100%);
+                        color: white;
+                        text-decoration: none;
+                        padding: 1rem 2.5rem;
+                        border-radius: 50px;
+                        font-weight: 500;
+                        transition: all 0.25s ease;
+                        border: 1px solid rgba(255,255,255,0.15);
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                        min-width: 280px;
+                   "
+                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.2)'" 
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+                    <i class="fab fa-whatsapp"></i>
+                    Konfirmasi Pembayaran
+                </a>
+            </div>
+            <div class="payment-details" style="
+                background: rgba(255,255,255,0.05);
+                padding: 1.5rem;
+                border-radius: 12px;
+                margin: 1.5rem 0;
+            ">
+                <div class="contact-grid" style="
+                    display: grid;
+                    grid-template-columns: max-content 1fr;
+                    gap: 0.75rem 1.5rem;
+                    align-items: center;
+                    color: rgba(255,255,255,0.9);
+                ">
+                    <div><i class="fas fa-phone-alt"></i></div>
+                    <div>WhatsApp: 
+                        <span style="
+                            color: #C77DFF;
+                            font-weight: 600;
+                            margin-left: 0.5rem;
+                        ">
+                            085184001235
+                        </span>
+                    </div>
+                    
+                    <div><i class="fas fa-calendar-alt"></i></div>
+                    <div>Batas Pembayaran:
+                        <span style="
+                            color: #C77DFF;
+                            font-weight: 600;
+                            margin-left: 0.5rem;
+                        ">
+                            Tanggal 20 Setiap Bulan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        ">
+            <p style="
+                color: rgba(255,255,255,0.6);
+                margin: 0;
+                font-size: 0.85rem;
+                line-height: 1.6;
+            ">
+                <strong style="color: #E0AAFF;">PT Ultra Network Solution</strong><br>
+                Solusi Kebutuhan Internet Anda
+            </p>
+        </div>
     </div>
+</div>
 </body>
 </html>
